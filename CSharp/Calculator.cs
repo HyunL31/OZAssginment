@@ -31,7 +31,7 @@ namespace DailyAssignmentCSharp
 
             try
             {
-                divideResult = first % second;
+                divideResult = first / second;
             }
             catch (DivideByZeroException ex)
             {
