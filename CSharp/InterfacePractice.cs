@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DailyAssignmentCSharp
 {
-    internal class InterfacePratice
+    internal class InterfacePractice
     {
         public interface ISleep
         {
