@@ -181,7 +181,7 @@ namespace DailyAssignmentCSharp
             }
 
             Console.WriteLine($"카페 {player.StoreName}을(를) 오픈했습니다.");
-            Console.WriteLine($"자본금이 0원이 되면 폐업합니다.\n자본금이 10000원이 되면 '카페의 신'이 되어 모두의 칭송을 받습니다.");
+            Console.WriteLine($"자본금이 0원이 되면 폐업합니다.\n자본금이 3000원이 되면 '카페의 신'이 되어 모두의 칭송을 받습니다.");
 
             while (true)
             {
@@ -210,7 +210,7 @@ namespace DailyAssignmentCSharp
                 }
                 else if (userInput == 2)
                 {
-                    if (player.Gold <= 100)
+                    if (player.Gold < 100)
                     {
                         Console.WriteLine("빵을 만들기 위해 100원이 필요합니다.\n자본금이 부족합니다.");
                         continue;
@@ -239,7 +239,7 @@ namespace DailyAssignmentCSharp
                 }
                 else if (userInput == 3)
                 {
-                    if (player.Gold <= 100)
+                    if (player.Gold < 100)
                     {
                         Console.WriteLine("음료를 만들기 위해 100원이 필요합니다.\n자본금이 부족합니다.");
                         continue;
