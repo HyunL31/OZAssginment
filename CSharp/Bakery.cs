@@ -151,7 +151,7 @@ namespace DailyAssignmentCSharp
                         }
                     }
 
-                    Drink drink = new Drink(drinkName, 1, 150);
+                    Drink drink = new Drink(drinkName, 1, 200);
                     foods.Add(drinkName, drink);
                 }
                 else
@@ -175,7 +175,7 @@ namespace DailyAssignmentCSharp
                         }
                     }
 
-                    Bread bread = new Bread(breadName, 1, 200);
+                    Bread bread = new Bread(breadName, 1, 300);
                     foods.Add(breadName, bread);
                 }
             }
@@ -192,7 +192,7 @@ namespace DailyAssignmentCSharp
                     Console.WriteLine($"아쉽게도 카페 {player.StoreName}은(는) 폐업을 하고 말았습니다...");
                     return;
                 }
-                else if (player.Gold > 10000)
+                else if (player.Gold >= 3000)
                 {
                     break;
                 }
