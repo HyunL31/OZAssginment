@@ -62,7 +62,11 @@ public class PlayerMove : MonoBehaviour
             Jump();
         }
 
-        Shoot();
+        // 왼쪽 컨트롤 키를 누르면 Raycast
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Shoot();
+        }
     }
 
     private void Move()
@@ -109,5 +113,12 @@ public class PlayerMove : MonoBehaviour
 
             Destroy(hit.collider.gameObject);
         }
+    }
+
+    // 디버깅용 (암기)
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, transform.forward * collideDis);
     }
 }
